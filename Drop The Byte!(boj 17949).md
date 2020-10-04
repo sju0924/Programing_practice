@@ -8,15 +8,15 @@
 
 	for (int j = 15;j >= 0;j--) {
 	res += char_to_int(input[cur + 16 - j]) * pow(16, j); 
-       	 }
+	}
 
 
 이 부분이 문제였다. 
 
-			for (int j = 15;j >= 0;j--) {
-				temp = char_to_int(input[cur + 16 - j]) * pow(16, j);
-				res += temp;
-			}
+	for (int j = 15;j >= 0;j--) {
+		temp = char_to_int(input[cur + 16 - j]) * pow(16, j);
+		res += temp;
+	}
   res에다 바로 더하지 말고 중간에 temp를 넣어줬더니 잘 돌아간다. 띠용?<br/>
   왜 이러는지 찾아봐도 안 나온다. 누가 알려주었으면 좋겠다. 
 
